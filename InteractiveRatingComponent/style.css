@@ -66,8 +66,9 @@ body {
 
 .star-img img {
   width: 17px;
+  height: 17px;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .rating-title {
