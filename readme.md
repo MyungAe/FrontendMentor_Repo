@@ -2,5 +2,5 @@
 
 ## level 1
 
-- [Interactive Rating Component]() [x]
-- [QR Code Component]() [x]
+- [Interactive Rating Component]() [v]
+- [QR Code Component]() [v]
