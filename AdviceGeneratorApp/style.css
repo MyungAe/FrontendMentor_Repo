@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+/* 
+    Style Guide
+    
+    1. layout 
+    mobile : 375px
+    desktop : 1440px
+
+    2. colors
+    primary : Light Cyan = hsl(193, 38%, 86%), 
+              Neon Green = hsl(150, 100%, 66%)
+    Neutral : Grayish Blue = hsl(217, 19%, 38%), 
+              Dark Grayish Blue = hsl(217, 19%, 24%),
+              Dark Blue = hsl(218, 23%, 16%)
+
+    3. fonts
+    font size : 28px
+    font family : Manrope, 800 (https://fonts.google.com/specimen/Manrope)
+*/
+
+/* init */
+body {
+  margin: 0;
+}
+
+/* style */
+:root {
+  /* primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  /* netural */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+}
+
+.id {
+  color: var(--Neon-Green);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.paragraph {
+  color: var(--Light-Cyan);
+  white-space: normal;
+}
+
+.dice {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Neon-Green);
+  color: var(--Grayish-Blue);
+}
+
+.dice img {
+  position: static;
+  border-radius: 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .wrap {
+    margin: 0 10px;
+    padding: 15px 15px 25px;
+    border-radius: 5px;
+  }
+
+  .wrap img {
+    width: 200px;
+    height: 10px;
+  }
+
+  .paragraph {
+    min-width: 200px;
+    color: var(--Light-Cyan);
+    font-size: 20px;
+  }
+
+  .dice {
+    bottom: 13px;
+    border-radius: 13px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .dice img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .wrap {
+    margin: 0 20px;
+    padding: 30px 30px 50px;
+    border-radius: 10px;
+  }
+
+  .paragraph {
+    max-width: 540px;
+    color: var(--Light-Cyan);
+    font-size: 28px;
+  }
+
+  .dice {
+    bottom: 25px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .dice img {
+    width: 20px;
+    height: 20px;
+  }
+}
