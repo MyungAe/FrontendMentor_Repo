@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  /* primary color */
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange: hsl(43, 84%, 65%);
+  /* neutral color */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-blue: hsl(236, 100%, 87%);
+}
+
+/* init */
+body,
+h2,
+h3,
+ul,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* styles */
+body {
+  font-family: "Rubik", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Very-dark-blue);
+  color: var(--Desaturated-blue);
+}
+
+.dashboard-wrap * {
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-wrap {
+    display: grid;
+    grid-template-areas:
+      "profile work play study"
+      "profile exercise social selfcare";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-right: 20px;
+  }
+
+  .dashboard-wrap > * {
+    margin: 20px 0 0 20px;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+  }
+
+  .dashboard-username {
+    font-weight: 300;
+    font-size: 36px;
+  }
+
+  .user-img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 60px;
+  }
+
+  .dashboard-username {
+    margin-bottom: 50px;
+  }
+
+  .report {
+    margin: 30px 0 2px;
+  }
+
+  .dashboard-term {
+    padding-bottom: 10px;
+  }
+
+  .statistics,
+  .dashboard-profile,
+  .dashboard-term {
+    padding: 30px;
+  }
+
+  .current-time {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 25px 0 10px;
+  }
+
+  .last-time {
+    font-size: 12px;
+  }
+
+  .dashboard-term li {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .dashboard-wrap {
+    margin: 20px;
+  }
+
+  .dashboard-username {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  .dashboard-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .user-img {
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 40px;
+  }
+
+  .wrap {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dashboard-wrap > * {
+    margin-top: 20px;
+    min-height: 150px;
+  }
+
+  .dashboard-profile {
+    padding: 20px;
+  }
+
+  .dashboard-term {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .moblie-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 0;
+  }
+
+  .current-time {
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  .last-time {
+    font-size: 12px;
+  }
+
+  .statistics {
+    padding: 20px;
+  }
+}
+
+.dashboard-work {
+  grid-area: work;
+  background-color: var(--Light-red-work);
+  background-image: url("./images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.dashboard-play {
+  grid-area: play;
+  background-color: var(--Soft-blue);
+  background-image: url("./images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.dashboard-study {
+  grid-area: study;
+  background-color: var(--Light-red-study);
+  background-image: url("./images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.dashboard-exercise {
+  grid-area: exercise;
+  background-color: var(--Lime-green);
+  background-image: url("./images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.dashboard-social {
+  grid-area: social;
+  background-color: var(--Violet);
+  background-image: url("./images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.dashboard-selfcare {
+  grid-area: selfcare;
+  background-color: var(--Soft-orange);
+  background-image: url("./images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.report {
+  color: var(--Pale-blue);
+  font-size: 12px;
+}
+
+.dashboard-username {
+  color: white;
+}
+
+.clicked {
+  color: white;
+}
+
+.dashboard-profile-wrap {
+  grid-area: profile;
+}
+
+.dashboard-profile {
+  background-color: var(--Blue);
+}
+
+.statistics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ellipsis {
+  width: 15px;
+  height: 5px;
+  vertical-align: middle;
+}
+
+.statistics-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.current-time {
+  color: white;
+}
+
+.last-time {
+  color: var(--Pale-blue);
+}
+
+.statistics,
+.dashboard-profile-wrap {
+  background-color: var(--Dark-blue);
+}
+
+.bg {
+  width: inherit;
+  height: 45px;
+  border-radius: 20px 20px 0 0;
+}
+
+.none {
+  display: none;
+}
+
+.dashboard-work,
+.dashboard-play,
+.dashboard-study,
+.dashboard-exercise,
+.dashboard-social,
+.dashboard-selfcare {
+  position: relative;
+}
+
+.statistics {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics:active {
+  background-color: var(--Desaturated-blue);
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

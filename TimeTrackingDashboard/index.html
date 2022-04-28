@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard-wrap">
+      <div class="dashboard-profile-wrap">
+        <div class="dashboard-profile">
+          <img
+            src="./images/image-jeremy.png"
+            alt="user-img"
+            class="user-img"
+          />
+          <div class="wrap">
+            <div class="report">Report for</div>
+            <h2 class="dashboard-username">Jeremy Robson</h2>
+          </div>
+        </div>
+        <ul class="dashboard-term">
+          <li>
+            <input type="radio" id="daily" name="term" />
+            <label for="daily">Daily</label>
+          </li>
+          <li>
+            <input type="radio" id="weekly" name="term" />
+            <label for="weekly" class="clicked">Weekly</label>
+          </li>
+          <li>
+            <input type="radio" id="monthly" name="term" />
+            <label for="monthly">Monthly</label>
+          </li>
+        </ul>
+      </div>
+      <div class="dashboard-work">
+        <div class="bg"></div>
+        <div class="statistics">
+          <div class="statistics-header">
+            <h3 class="statistics-title">Work</h3>
+            <a href="#">
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="ellipsis"
+                class="ellipsis"
+              />
+            </a>
+          </div>
+          <div class="moblie-flex">
+            <div class="current-time daily none">5hrs</div>
+            <div class="last-time daily none">Yesterday - 7hrs</div>
+            <div class="current-time weekly">32hrs</div>
+            <div class="last-time weekly">Last Week - 36hrs</div>
+            <div class="current-time monthly none">103hrs</div>
+            <div class="last-time monthly none">Last Month - 128hrs</div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-play">
+        <div class="bg"></div>
+        <div class="statistics">
+          <div class="statistics-header">
+            <h3 class="statistics-title">Play</h3>
+            <a href="#">
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="ellipsis"
+                class="ellipsis"
+              />
+            </a>
+          </div>
+          <div class="moblie-flex">
+            <div class="current-time daily none">1hr</div>
+            <div class="last-time daily none">Yesterday - 2hrs</div>
+            <div class="current-time weekly">10hrs</div>
+            <div class="last-time weekly">Last Week - 8hrs</div>
+            <div class="current-time monthly none">23hrs</div>
+            <div class="last-time monthly none">Last Month - 29hrs</div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-study">
+        <div class="bg"></div>
+        <div class="statistics">
+          <div class="statistics-header">
+            <h3 class="statistics-title">Study</h3>
+            <a href="#">
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="ellipsis"
+                class="ellipsis"
+              />
+            </a>
+          </div>
+          <div class="moblie-flex">
+            <div class="current-time daily none">0hrs</div>
+            <div class="last-time daily none">Yesterday - 1hr</div>
+            <div class="current-time weekly">4hrs</div>
+            <div class="last-time weekly">Last Week - 7hrs</div>
+            <div class="current-time monthly none">13hrs</div>
+            <div class="last-time monthly none">Last Month - 19hrs</div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-exercise">
+        <div class="bg"></div>
+        <div class="statistics">
+          <div class="statistics-header">
+            <h3 class="statistics-title">Exercise</h3>
+            <a href="#">
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="ellipsis"
+                class="ellipsis"
+              />
+            </a>
+          </div>
+          <div class="moblie-flex">
+            <div class="current-time daily none">1hr</div>
+            <div class="last-time daily none">Yesterday - 1hr</div>
+            <div class="current-time weekly">4hrs</div>
+            <div class="last-time weekly">Last Week - 5hrs</div>
+            <div class="current-time monthly none">11hrs</div>
+            <div class="last-time monthly none">Last Month - 18hrs</div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-social">
+        <div class="bg"></div>
+        <div class="statistics">
+          <div class="statistics-header">
+            <h3 class="statistics-title">Social</h3>
+            <a href="#">
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="ellipsis"
+                class="ellipsis"
+              />
+            </a>
+          </div>
+          <div class="moblie-flex">
+            <div class="current-time daily none">1hr</div>
+            <div class="last-time daily none">Yesterday - 3hrs</div>
+            <div class="current-time weekly">5hrs</div>
+            <div class="last-time weekly">Last Week - 10hrs</div>
+            <div class="current-time monthly none">21hrs</div>
+            <div class="last-time monthly none">Last Month - 23hrs</div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-selfcare">
+        <div class="bg"></div>
+        <div class="statistics">
+          <div class="statistics-header">
+            <h3 class="statistics-title">Self Care</h3>
+            <a href="#">
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="ellipsis"
+                class="ellipsis"
+              />
+            </a>
+          </div>
+          <div class="moblie-flex">
+            <div class="current-time daily none">0hr</div>
+            <div class="last-time daily none">Yesterday - 1hrs</div>
+            <div class="current-time weekly">2hrs</div>
+            <div class="last-time weekly">Last Week - 2hrs</div>
+            <div class="current-time monthly none">7hrs</div>
+            <div class="last-time monthly none">Last Month - 11hrs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/MyungAe/FrontendMentor_Repo">Jinsik</a>.
+    </div>
+    <script src="./event.js"></script>
+  </body>
+</html>
