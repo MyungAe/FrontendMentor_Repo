@@ -4,6 +4,7 @@
 
 - [Interactive Rating Component(HTML, CSS, JS)](https://myungae.github.io/FrontendMentor_Repo/InteractiveRatingComponent/index.html) [v]
 - [QR Code Component(HTML, CSS)](https://myungae.github.io/FrontendMentor_Repo/QRCodeComponent/index.html) [v]
+- [NFT Preview Card Component(HTML, CSS)](https://myungae.github.io/FrontendMentor_Repo/NFTPreviewCardComponent/index.html)
 
 ## level 2
 
