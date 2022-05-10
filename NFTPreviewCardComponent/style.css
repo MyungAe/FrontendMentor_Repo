@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Main-bg: hsl(217, 54%, 11%);
+  --Card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* initial */
+body,
+p {
+  margin: 0;
+}
+
+/* styles */
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: var(--Main-bg);
+  color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrap {
+  background-color: var(--Card-bg);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.equilibrium-img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.paragraph {
+  color: var(--Soft-blue);
+  line-height: 150%;
+}
+
+.price-and-time-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.price-wrap,
+.time-wrap,
+.seller-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.price,
+.time {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.price {
+  color: var(--Cyan);
+  font-weight: 600;
+}
+
+.time {
+  color: var(--Soft-blue);
+}
+
+.seller-wrap {
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+}
+
+.userimg {
+  width: 30px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+.seller {
+  color: var(--Soft-blue);
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.seller-name {
+  color: var(--white);
+  font-weight: 300;
+}
